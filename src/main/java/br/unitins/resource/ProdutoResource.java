@@ -14,6 +14,8 @@ import br.unitins.model.*;
 @Path("/produtos")
 public class ProdutoResource {
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/all")
     public List<Produtos> getAll() {
 
         // seleciona todas as pessoas do banco de dados
